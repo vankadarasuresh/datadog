@@ -9,4 +9,4 @@ parse_json = json.loads(data)
 active_case = parse_json['Andaman and Nicobar Islands']['districtData']['South Andaman']['active']
 print("Active cases in South Andaman:", active_case)
 
-datadogapi_metrics.metrics_datadog(500,500,510.12)
+datadogapi_metrics.metrics_datadog(500,500,1010.12)

@@ -1,8 +1,6 @@
-"""
-Submit metrics returns "Payload accepted" response
-"""
+"This python file contains the details related to datadog metrics api usage"
+
 from numpy import integer
-#import datadogapi_initialize
 from datetime import datetime
 from datadog_api_client.v1 import ApiClient, Configuration
 from datadog_api_client.v1.api.metrics_api import MetricsApi
@@ -76,10 +74,12 @@ def metrics_datadog(uploaded_bytes_used,uploaded_bytes_allowed,percent):
 
 if __name__ == "__main__":
     
-#    initialized = datadogapi_initialize.initialize_datadog()
-#    print("API_Intialized: ", initialized)
+#declaring variables which needs to be  passed to metrics api
     uploaded_bytes_used = int
     uploaded_bytes_allowed = int
     percent = int
+
+#calling the  metrics_datadog function with input as api variables
+
     metrics_datadog(uploaded_bytes_used, uploaded_bytes_allowed, percent)
 
